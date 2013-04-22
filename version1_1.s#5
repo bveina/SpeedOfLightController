@@ -4487,12 +4487,11 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <variantdefs>
 </variantdefs>
 <classes>
-<class number="0" name="default" width="0.2032" drill="0.254">
+<class number="0" name="default" width="0.2032" drill="0.3048">
 <clearance class="0" value="0.2032"/>
 </class>
-<class number="1" name="power" width="0.4064" drill="0.3048">
-<clearance class="0" value="0.2032"/>
-<clearance class="1" value="0.254"/>
+<class number="1" name="power" width="0.2032" drill="0.3048">
+<clearance class="1" value="0.2032"/>
 </class>
 </classes>
 <parts>
@@ -5587,6 +5586,11 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <wire x1="203.2" y1="-2.54" x2="193.04" y2="-2.54" width="0.1524" layer="91"/>
 <label x="193.04" y="-2.54" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="U3" gate="G$1" pin="INTA"/>
+<wire x1="129.54" y1="-17.78" x2="139.7" y2="-17.78" width="0.1524" layer="91"/>
+<label x="134.62" y="-17.78" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="INTD" class="0">
 <segment>
@@ -5594,15 +5598,6 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <wire x1="203.2" y1="-5.08" x2="193.04" y2="-5.08" width="0.1524" layer="91"/>
 <label x="193.04" y="-5.08" size="1.778" layer="95"/>
 </segment>
-</net>
-<net name="INC" class="0">
-<segment>
-<pinref part="U3" gate="G$1" pin="INTA"/>
-<wire x1="129.54" y1="-17.78" x2="139.7" y2="-17.78" width="0.1524" layer="91"/>
-<label x="134.62" y="-17.78" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="IND" class="0">
 <segment>
 <pinref part="U3" gate="G$1" pin="INTB"/>
 <wire x1="129.54" y1="-20.32" x2="139.7" y2="-20.32" width="0.1524" layer="91"/>

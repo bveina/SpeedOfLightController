@@ -5062,6 +5062,10 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <part name="H4" library="holes" deviceset="MOUNT-HOLE" device="3.2"/>
 <part name="JP9" library="SparkFun" deviceset="M02" device="1X02_NO_SILK"/>
 <part name="JP10" library="SparkFun" deviceset="M02" device="1X02_NO_SILK"/>
+<part name="JP11" library="SparkFun" deviceset="M02" device="1X02_NO_SILK"/>
+<part name="JP12" library="SparkFun" deviceset="M02" device="1X02_NO_SILK"/>
+<part name="P+9" library="supply1" deviceset="VCC" device=""/>
+<part name="GND17" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -5150,6 +5154,10 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <instance part="H4" gate="G$1" x="-114.3" y="-60.96"/>
 <instance part="JP9" gate="G$1" x="38.1" y="48.26" rot="R180"/>
 <instance part="JP10" gate="G$1" x="30.48" y="-5.08" rot="R180"/>
+<instance part="JP11" gate="G$1" x="43.18" y="-30.48" rot="R180"/>
+<instance part="JP12" gate="G$1" x="43.18" y="-45.72" rot="R180"/>
+<instance part="P+9" gate="VCC" x="20.32" y="-30.48" rot="R90"/>
+<instance part="GND17" gate="1" x="25.4" y="-33.02" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -5752,6 +5760,16 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <wire x1="203.2" y1="5.08" x2="193.04" y2="5.08" width="0.1524" layer="91"/>
 <label x="193.04" y="5.08" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="JP11" gate="G$1" pin="2"/>
+<pinref part="GND17" gate="1" pin="GND"/>
+<wire x1="35.56" y1="-33.02" x2="30.48" y2="-33.02" width="0.1524" layer="91"/>
+<pinref part="JP12" gate="G$1" pin="2"/>
+<wire x1="30.48" y1="-33.02" x2="27.94" y2="-33.02" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="-48.26" x2="30.48" y2="-48.26" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="-48.26" x2="30.48" y2="-33.02" width="0.1524" layer="91"/>
+<junction x="30.48" y="-33.02"/>
+</segment>
 </net>
 <net name="N$49" class="0">
 <segment>
@@ -6046,6 +6064,16 @@ Source: http://www.murata.com .. GRM43DR72E224KW01.pdf</description>
 <pinref part="JP17" gate="G$1" pin="1"/>
 <wire x1="203.2" y1="7.62" x2="193.04" y2="7.62" width="0.1524" layer="91"/>
 <label x="193.04" y="7.62" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="JP11" gate="G$1" pin="1"/>
+<pinref part="P+9" gate="VCC" pin="VCC"/>
+<wire x1="35.56" y1="-30.48" x2="33.02" y2="-30.48" width="0.1524" layer="91"/>
+<pinref part="JP12" gate="G$1" pin="1"/>
+<wire x1="33.02" y1="-30.48" x2="22.86" y2="-30.48" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="-45.72" x2="33.02" y2="-45.72" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="-45.72" x2="33.02" y2="-30.48" width="0.1524" layer="91"/>
+<junction x="33.02" y="-30.48"/>
 </segment>
 </net>
 <net name="INTA" class="0">
